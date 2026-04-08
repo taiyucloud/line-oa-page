@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>LINE OA 宣傳</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: "Noto Sans TC", sans-serif;
+        background: linear-gradient(135deg, #06C755, #4facfe);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .card {
+        width: 620px;
+        background: white;
+        border-radius: 20px;
+        padding: 40px;
+        box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+    }
+
+    /* 裝飾圓形 */
+    .card::before {
+        content: "";
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        background: rgba(6,199,85,0.1);
+        border-radius: 50%;
+        top: -60px;
+        left: -60px;
+    }
+
+    .card::after {
+        content: "";
+        position: absolute;
+        width: 180px;
+        height: 180px;
+        background: rgba(79,172,254,0.15);
+        border-radius: 50%;
+        bottom: -60px;
+        right: -60px;
+    }
+
+    h1 {
+        color: #06C755;
+        margin-bottom: 10px;
+        font-size: 28px;
+    }
+
+    h2 {
+        margin-top: 0;
+        color: #333;
+        font-size: 22px;
+    }
+
+    p {
+        color: #555;
+        line-height: 1.6;
+    }
+
+    .feature-box {
+        background: #f6fff9;
+        border-radius: 12px;
+        padding: 15px 20px;
+        margin: 20px 0;
+        text-align: left;
+    }
+
+    .feature-box li {
+        margin: 8px 0;
+        font-weight: 500;
+    }
+
+    .cta {
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .qr-box {
+        margin: 25px auto;
+        width: 180px;
+        height: 180px;
+        border-radius: 16px;
+        background: #f0f0f0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #888;
+        font-size: 14px;
+        border: 2px dashed #ccc;
+    }
+
+    .footer {
+        margin-top: 10px;
+        font-size: 14px;
+        color: #777;
+    }
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <h1>📣 教學資源不漏接！</h1>
+    <h2>加入我們的 LINE 官方帳號</h2>
+
+    <p>
+        親愛的老師您好：<br>
+        即時掌握教學資源與最新資訊，<br>
+        我們已建立 LINE OA，讓資訊主動送到您手中！
+    </p>
+
+    <div class="feature-box">
+        <strong>💡 加入後可獲得：</strong>
+        <ul>
+            <li>📚 教學資源與教材分享</li>
+            <li>🎯 教學活動與課程資訊</li>
+            <li>📢 最新公告與重要通知</li>
+            <li>✨ 精選教學靈感不定期推播</li>
+        </ul>
+    </div>
+
+    <div class="cta">📲 立即加入我們！</div>
+    <p>掃描 QR Code 或搜尋官方帳號</p>
+
+    <div class="qr-box">
+    <img src="qrcode.png" alt="QR Code">
+    </div>
+
+    <div class="footer">
+        還沒加入嗎？現在就掃描加入吧！<br>
+        重要資訊不再錯過 ✔
+    </div>
+
+</div>
+
+</body>
+</html>
